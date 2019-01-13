@@ -1,3 +1,7 @@
 class Item < ApplicationRecord
-  belongs_to :toro
+  # model association
+  belongs_to :todo
+
+  # validation
+  validates_presence_of :name
 end
